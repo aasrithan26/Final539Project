@@ -3,54 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BuiltUp: Architecture + UX</title>
+  <title>BuiltUp | Architecture + UX</title>
+  <!-- single stylesheet in repo root -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-------- NAVBAR -------->
   <nav class="navbar">
-  <a href="index.html" class="logo">BuiltUp</a>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-  </ul>
-</nav>
+    <a href="index.html" class="logo">BuiltUp</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-------- HERO -------->
   <header>
     <h1>BuiltUp: ARCHITECTURE + UX</h1>
-    <p>A visual lookbook connecting architecture to UX design principles.</p>
+    <br>
+
+    <p style="font-size: x-large;">A visual look-book connecting architecture to UX design principles.</p>
   </header>
-
-  <main class="gallery">
-    <div class="card" tabindex="0" data-id="1" aria-label="Grid Systems">
-      <img src="assets/yale grid-1.jpg" alt="Architectural blueprint grid" class="card-img" />
-      <div class="icon">🧱</div>
-      <h2>Grid Systems</h2>
-      <p>Architectural grids bring structure—just like layout grids in UI design.</p>
-    </div>
-
-    <div class="card" tabindex="0" data-id="2" aria-label="Arches and Entry Points">
-      <img src="assets/arches.jpg" alt="A modern archway" class="card-img" />
-      <div class="icon">🏛</div>
-      <h2>Arches & Entry Points</h2>
-      <p>Entrances help people orient themselves. In UX, buttons and onboarding do the same.</p>
-    </div>
-
-    <div class="card" tabindex="0" data-id="3" aria-label="Light and Space">
-      <img src="assets/images.jpeg" alt="Light streaming into an interior space" class="card-img" />
-      <div class="icon">🌞</div>
-      <h2>Light & Space</h2>
-      <p>Light directs people in physical spaces. In UX, whitespace and contrast do that digitally.</p>
-    </div>
-
-    <div class="card" tabindex="0" data-id="4" aria-label="Texture and Materiality">
-      <img src="assets/texture.jpg" alt="texture close-up" class="card-img" />
-      <div class="icon">🪵</div>
-      <h2>Texture & Materiality</h2>
-      <p>Materials convey emotion. In UI, depth and motion evoke feel and hierarchy.</p>
-    </div>
-  </main>
-
-  <section id="info-panel" aria-live="polite" hidden></section>
-
+  <br>
+  <br>
+  <!--------  HEADLINE-TICKER  -------->
+  <div class="strip">
+    <section class="headline-section">
+      <div class="ticker-wrapper">
+        <div class="ticker-track">
+          <!-- four ORIGINAL cards -->
+          <article class="card" data-id="1" tabindex="0" aria-label="Grid Systems">
+            <img src="assets/yale grid-1.jpg" alt="Architectural blueprint grid" class="card-img"/>
+            <h2>Grid Systems</h2>
+            <p>Architectural grids bring structure—just like layout grids in UI design.</p>
+          </article>
+  
+          <article class="card" data-id="2" tabindex="0" aria-label="Arches and Entry Points">
+            <img src="assets/arches.jpg" alt="Modern archway" class="card-img"/>
+            <h2>Arches & Entry Points</h2>
+            <p>Entrances orient people. In UX, buttons and onboarding do the same.</p>
+          </article>
+  
+          <article class="card" data-id="3" tabindex="0" aria-label="Light and Space">
+            <img src="assets/images.jpeg" alt="Light streaming into an interior space" class="card-img"/>
+            <h2>Light & Space</h2>
+            <p>Light directs people physically; whitespace and contrast guide digitally.</p>
+          </article>
+  
+          <article class="card" data-id="4" tabindex="0" aria-label="Texture and Materiality">
+            <img src="assets/texture.jpg" alt="Close-up texture" class="card-img"/>
+            <h2>Texture & Materiality</h2>
+            <p>Materials convey emotion. Depth and motion evoke feel and hierarchy.</p>
+          </article>
+        </div>
+      </div>
+      <section id="info-panel" aria-live="polite" hidden></section>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
